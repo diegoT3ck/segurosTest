@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguro | Protege tu Vida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/build/css/app.css">
+    <style>
+        .formulario__campo {
+            margin-bottom: 15px;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header class="header contenedor">
+        <div class="header__logo">
+            <img src="build/img/logo.jpg" alt="Logo Seguros">
+        </div>
+        <nav class="navegacion">
+            <a href="#" class="navegacion__link">Para tu negocio</a>
+            <a href="#" class="navegacion__link">Para ti</a>
+            <a href="#" class="navegacion__link navegacion__link--registrar">Contactanos</a>
+        </nav>
+    </header>
+
+      <!-- Swiper -->
+
+  <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+    <div class="parallax-bg" style="
+          background-image: url(build/img/banner-2.jpg);
+        " data-swiper-parallax="-23%"></div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="title" data-swiper-parallax="-300">Asegura tu PyME y sus empleados</div>
+        <div class="subtitle" data-swiper-parallax="-200">
+            <a href="#" class="swiper-btn">
+                Ver mas
+            </a>
+        </div>
+        <div class="text" data-swiper-parallax="-100">
+          <p>
+            Al asegurar tu PyME y sus empleados, contribuyes a su motivación, 
+            atracción y retención, protegiendo su salud o ante fallecimiento e 
+            invalidez, con tarifas de acuerdo al giro de tu empresa. Tenemos dos 
+            seguros para que elijas el que más se adecúe a tus necesidades.           
+        </p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="title" data-swiper-parallax="-300">Planprotege Vida</div>
+        <div class="subtitle" data-swiper-parallax="-200">
+            <a href="#planprotege" class="swiper-btn">
+                Ver mas
+            </a>
+        </div>
+        <div class="text" data-swiper-parallax="-100">
+          <p>
+            Es un seguro de vida que además de proteger a tus empleados, 
+            cuida tu negocio con diversos servicios que te ayudarán a proteger 
+            la integridad de tu negocio. Entre las principales coberturas que 
+            puedes contratar en esta modalidad están...    
+           </p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="title" data-swiper-parallax="-300">Seguro Línea Hospitalaria</div>
+        <div class="subtitle" data-swiper-parallax="-200">
+            <a href="#" class="swiper-btn">
+                Ver mas
+            </a>
+        </div>
+        <div class="text" data-swiper-parallax="-100">
+          <p>
+            Es un seguro flexible que te beneficia al crear lealtad con 
+            tus empleados, así como la  retención  de  talento de tu empresa, 
+            cuenta con los siguientes beneficios...
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+
+    <section class="puntos" id="planprotege">
+        <img class="puntos__wave" src="build/img/wave.svg" alt="Imagen wave">
+        <div class="puntos__contenido">
+            <h2 class="puntos__heading">Planprotege Vida 
+                <span class="puntos__heading--descripcion">
+                    ¿Como funciona?
+                </span></h2>
+                
+            <div class="puntos__grid contenedor">
+                <div class="punto">
+                    <div class="punto__titulo">
+                        <picture class="punto__imagen">
+                            <source srcset="build/img/check-icon.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/check-icon.png" width="60" height="40" alt="Imagen"/>
+                        </picture>
+                        <span>
+                            Perdidas Orgánicas por Accidente (POA)
+                        </span>
+                    </div>
+                    <div class="punto__descripcion">
+                        Si debido a un accidente, alguno de tus empleados sufre la pérdida de alguna parte de su 
+                        cuerpo recibirá un porcentaje de la suma asegurada contratada de acuerdo al 
+                        tipo de pérdida
+                    </div>
+                </div>
+
+                <div class="punto">
+                    <div class="punto__titulo">
+                        <picture class="punto__imagen">
+                            <source srcset="build/img/check-icon.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/check-icon.png" width="60" height="40" alt="Imagen"/>
+                        </picture>
+                        <span>
+                            Cobertura por invalidez total y permanente (BITP)
+                        </span>
+                    </div>
+                    <div class="punto__descripcion">
+                        Si alguno de tus empleados es diagnosticado con invalidez  para desempeñar su 
+                        trabajo permanentemente, recibirá la suma asegurada contratada para esta cobertura.
+                    </div>
+                </div>
+                <div class="punto">
+                    <div class="punto__titulo">
+                        <picture class="punto__imagen">
+                            <source srcset="build/img/check-icon.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/check-icon.png" width="60" height="40" alt="Imagen"/>
+                        </picture>
+                        <span>
+                            Seguro Saldado por invalidez total (SSIT)
+                        </span>
+                    </div>
+                    <div class="punto__descripcion">
+                        Se el asegurado se invalida para desempeñar el resto de 
+                        su trabajo permanentemente, quedará asegurado sin más pagos de primas del seguro. 
+                    </div>
+                </div>
+
+                <div class="punto">
+                    <div class="punto__titulo">
+                        <picture class="punto__imagen">
+                            <source srcset="build/img/check-icon.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/check-icon.png" width="60" height="40" alt="Imagen"/>
+                        </picture>
+                        <span>
+                            Servicio de Asistencia Legal
+                        </span>
+                    </div>
+                    <div class="punto__descripcion">
+                        Abogados que te  asesoran para que tu negocio esté en regla respecto a 
+                        temas legales, fiscales y laborales, sin costo adicional.                  
+                    </div>
+                </div>
+
+                <div class="punto">
+                    <div class="punto__titulo">
+                        <picture class="punto__imagen">
+                            <source srcset="build/img/check-icon.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/check-icon.png" width="60" height="40" alt="Imagen"/>
+                        </picture>
+                        <span>
+                            Servicio de Asistencia Legal
+                        </span>
+                    </div>
+                    <div class="punto__descripcion">
+                        Hasta por $15,000 pesos, y asesoría legal a los beneficiarios de tus empleados en caso de 
+                        fallecimiento, se efectuará el traslado del cuerpo, las cenizas o el entierro donde haya 
+                        ocurrido el deceso.                    
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="linea-hospitalaria">
+        <div class="contenedor linea-hospitalaria-grid">
+            <div class="linea-hospitalaria-texto">
+                <h1>Seguro Línea Hospitalaria</h1>
+                <div>
+                    <h2>Tu Médico 24 Horas</h2>
+                    <p>
+                        Ofrece asistencia médica con, consultas médicas a domicilio, 
+                        asistencia nutricional y psicológica, descuentos y precios 
+                        preferenciales en clínicas dentales y laboratorios (clínicos 
+                        y de gabinete). 
+                    </p>
+                </div>
+                <div>
+                    <h2>+Care</h2>
+                    <p>
+                        Es nuestro programa gratuito y voluntario de alta especialidad 
+                        que brinda orientación y acompañamiento en padecimientos oncológicos, 
+                        cardiovasculares y ortopédicos (disponible en CDMX, Guadalajara, 
+                        Monterrey, Puebla y Chihuahua).                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="linea-hospi">
+        <div class="contenedor linea-hospi-grid">
+                <div class="linea-hospi-contenido">
+                    <p>
+                        <span>Acceso</span> a atención médica a través de una amplia gama hospitalaria y sumas aseguradas de 
+                        hasta $100, 000,000 de pesos, además de contar con diferentes opciones de deducible y 
+                        coaseguro.
+                    </p>
+                    <p>
+                        <span>Maternidad</span> con periodo de espera de 4 meses que además cubre las complicaciones del embarazo, 
+                        recién nacido y cesárea.                  
+                    </p>
+                    <p>
+                        <span>Respaldo</span> en caso de enfermedades y oportunidad de contratar de manera adicional una renta 
+                        diaria en caso de hospitalización con nuestra cobertura de Dinero en Efectivo.
+                    </p>
+                </div>
+                <img 
+                    class="linea-hospi-image" 
+                    src="build/img/section-1.webp" 
+                    alt="Imagen"
+                />
+        </div>
+    </section>
+
+
+
+    <!-- Seccion 3 -->
+    <img class="necesidad_wave" src="build/img/wave-2.svg" alt="Imagen wave">
+    <section class="necesidad">
+
+        <h2 class="necesidad__heading contenedor">
+            ¿Porque lo necesito?
+            <span class="necesidad__heading--descripcion">
+                Proteger tu inversión es esencial para el buen funcionamiento de tu empresa. Estos seguros para tu PyME la respaldan y permiten su continuidad.
+            </span>
+        </h2>
+        <div class="necesidad__contenedor">
+            <div class="necesidad__grid " >
+                <div class="necesidad__contenido">
+                    <div class="listado">
+                        <div class="listado__elemento listado__elemento--2col">
+                            <p class="listado__texto">
+                                Los dueños de pequeñas y medianas empresas invierten gran parte de su patrimonio familiar en éstas, pero sólo el 5% lo tiene asegurado.
+                            </p>
+                        </div>
+                        <div class="listado__elemento listado__elemento--2col">
+                            <p class="listado__texto">
+                                Te ofrecen cuidado integral para tu negocio, con asesoría legal y protección para tus empleados.                            
+                            </p>
+                        </div>
+                    </div>
+                    <div class="listado__elemento listado__elemento--2col">
+                        <p class="listado__texto">
+                            Al brindarles seguridad y tranquilidad a tus empleados, mejorará su desempeño y tendrás mayor retención de personal.
+                        </p>
+                    </div>
+                </div>
+                </div> <!-- END necesidad__contenido -->
+
+                <div class="necesidad__imagen">
+                    <img src="build/img/section-3.webp" alt="Imagen App">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="para_quien">
+
+        <h2 class="para_quien__heading contenedor">
+            ¿Para quién son estos seguros?
+
+        </h2>
+        <div class="para_quien__contenedor">
+            <div class="para_quien__grid " >
+                <div class="para_quien__contenido">
+                    <div class="listado">
+                        <div class="listado__elemento listado__elemento--2col">
+                            <p class="listado__texto">
+                                Empresas que tengan entre 3 y máximo 250 empleados
+                            </p>
+                        </div>
+                        <div class="listado__elemento listado__elemento--2col">
+                            <p class="listado__texto">
+                                El contratante debe ser una empresa moral o física con la actividad empresarial                            </p>
+                        </div>
+                    </div>
+                    <div class="listado__elemento listado__elemento--2col">
+                        <p class="listado__texto">
+                            La contratación del seguro debe ser por prestación laboral</p>
+                    </div>
+                    <div class="listado__elemento listado__elemento--2col">
+                        <p class="listado__texto">
+                            Al menos 70% de los empleados debe desarrollar actividades propias del giro del negocio                    </div>
+                </div>
+                </div> <!-- END para_quien__contenido -->
+
+                <div class="para_quien__imagen">
+                    <img src="build/img/section-1.webp" alt="Imagen App">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contenedor testimoniales">
+        <h2 class="testimoniales__heading">Testimoniales</h2>
+        <div class="testimoniales__grid">
+            <div class="testimonial">
+                <header class="testimonial__header">
+                    <div class="testimonial__imagen">
+                        <picture>
+                            <source srcset="build/img/testimonial1.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/testimonial1.jpg" alt="Testimonial"/>
+                        </picture>
+                    </div>
+                    <div class="testimonnial__informacion">
+                        <p class="testimonial__autor">Juan Perez</p>
+                        <picture class="testimonial__calificacion">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/estrellas.png" alt="Imagen"/>
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonial__texto">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Aperiam fugit corporis vitae harum incidunt ipsa quasi ducimus distinctio.
+                </blockquote>
+            </div> <!-- End Testimonial-->
+            <div class="testimonial">
+                <header class="testimonial__header">
+                    <div class="testimonial__imagen">
+                        <picture>
+                            <source srcset="build/img/testimonial5.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/testimonial5.jpg" alt="Testimonial"/>
+                        </picture>
+                    </div>
+                    <div class="testimonnial__informacion">
+                        <p class="testimonial__autor">Itzel Cruz</p>
+                        <picture class="testimonial__calificacion">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/estrellas.png" alt="Imagen"/>
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonial__texto">
+                    Lorem ipsum dolor sit amet, consectetur.
+                </blockquote>
+            </div> <!-- End Testimonial-->
+            <div class="testimonial">
+                <header class="testimonial__header">
+                    <div class="testimonial__imagen">
+                        <picture>
+                            <source srcset="build/img/testimonial4.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/testimonial4.jpg" alt="Testimonial"/>
+                        </picture>
+                    </div>
+                    <div class="testimonnial__informacion">
+                        <p class="testimonial__autor">Rocio Rodriguez</p>
+                        <picture class="testimonial__calificacion">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/estrellas.png" alt="Imagen"/>
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonial__texto">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Aperiam fugit corporis vitae harum incidunt ipsa quasi ducimus distinctio.
+                    Aperiam fugit corporis vitae harum
+                </blockquote>
+            </div> <!-- End Testimonial-->
+            <div class="testimonial">
+                <header class="testimonial__header">
+                    <div class="testimonial__imagen">
+                        <picture>
+                            <source srcset="build/img/testimonial2.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/testimonial2.jpg" alt="Testimonial"/>
+                        </picture>
+                    </div>
+                    <div class="testimonnial__informacion">
+                        <p class="testimonial__autor">Cyntia V</p>
+                        <picture class="testimonial__calificacion">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/estrellas.png" alt="Imagen"/>
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonial__texto">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Aperiam fugit corporis vitae harum incidunt ipsa quasi ducimus distinctio.
+                </blockquote>
+            </div> <!-- End Testimonial-->
+            <div class="testimonial">
+                <header class="testimonial__header">
+                    <div class="testimonial__imagen">
+                        <picture>
+                            <source srcset="build/img/testimonial3.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/testimonial3.jpg" alt="Testimonial"/>
+                        </picture>
+                    </div>
+                    <div class="testimonnial__informacion">
+                        <p class="testimonial__autor">Jose Hernandez</p>
+                        <picture class="testimonial__calificacion">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img loading="lazy" src="build/img/estrellas.png" alt="Imagen"/>
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonial__texto">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Aperiam fugit corporis vitae harum incidunt ipsa quasi ducimus distinctio.
+                </blockquote>
+            </div> <!-- End Testimonial-->
+        </div>
+
+    </section>
+    <!-- Formulario-->
+    <section class="contenedor formulario">
+        <div class="formulario__grid">
+            <div class="formulario__contenido">
+                <h2 class="formulario__heading">Encuentra una cotizacion de acuerdo a lo que necesitas</h2>
+                <form class="formulario__buscar" id="miFormulario" action="">
+                    <div class="formulario__campo">
+                        <label class="formulario__label" for="nombre">Nombre</label>
+                        <input class="formulario__input" id="nombre" placeholder="Ej. Diego Rubio" type="text">
+                        <span id="errorNombre" class="error"></span>
+                    </div> <!--end campo-->
+                    <div class="formulario__campo">
+                        <label class="formulario__label" for="phone">Teléfono</label>
+                        <input class="formulario__input" id="phone" placeholder="Ej. 55623465" type="tel">
+                        <span id="errorTelefono" class="error"></span>
+                    </div> <!--end campo-->
+                    <div class="formulario__campo">
+                        <label class="formulario__label" for="email">Correo</label>
+                        <input class="formulario__input" id="email" placeholder="Ej. correo@gmail.com" type="email">
+                        <span id="errorEmail" class="error"></span>
+                    </div> <!--end campo-->
+            
+                    <input type="submit" class="formulario__submit" value="Enviar">
+                </form>            
+            </div>
+
+            <div class="formulario__imagen-contenedor">
+                <img class="formulario__imagen" src="build/img/banner-3.webp" alt="Imagen Repartidor">
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p class="footer__copyrigth">Todos los derechos reservados</p>
+    </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      speed: 600,
+      parallax: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    document.getElementById('miFormulario').addEventListener('submit', function (event) {
+            // Detenemos el envío del formulario
+            event.preventDefault();
+
+            // Realizamos las validaciones
+            var nombre = document.getElementById('nombre').value.trim();
+            var telefono = document.getElementById('phone').value.trim();
+            var email = document.getElementById('email').value.trim();
+
+            // Validación de nombre
+            if (nombre === '') {
+                document.getElementById('errorNombre').textContent = 'Por favor, ingresa tu nombre';
+            } else {
+                document.getElementById('errorNombre').textContent = '';
+            }
+
+            // Validación de teléfono
+            if (telefono === '') {
+                document.getElementById('errorTelefono').textContent = 'Por favor, ingresa tu teléfono';
+            } else {
+                document.getElementById('errorTelefono').textContent = '';
+            }
+
+            // Validación de correo
+            if (email === '') {
+                document.getElementById('errorEmail').textContent = 'Por favor, ingresa tu correo';
+            } else {
+                document.getElementById('errorEmail').textContent = '';
+            }
+
+            // Si todas las validaciones son exitosas, puedes enviar el formulario
+            if (nombre !== '' && telefono !== '' && email !== '') {
+                // Aquí puedes agregar lógica para enviar el formulario al servidor
+                alert('Formulario enviado correctamente');
+            }
+        });
+  </script>
+</body>
+</html>

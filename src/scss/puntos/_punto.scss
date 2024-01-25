@@ -1,0 +1,36 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+.punto {
+    @include m.desktop {
+    }
+    padding:1rem 2rem 2rem 3rem;
+    border-radius: 4rem;
+    background-color: #fff;
+    color: #000;
+    border: .2rem solid #fff;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:hover {
+        border: .2rem solid #000;
+    }
+    &__imagen {
+        text-align: center;
+        min-width: 4.5rem;
+        max-width: 4.5rem;
+        height: 5rem;
+    }
+    &__titulo {
+
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+    &__descripcion {
+        font-size: 1.6rem;
+    }
+
+}
